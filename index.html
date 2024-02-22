@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/6e06be2705.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rania Mamou</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Expériences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rania Mamou</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/DSC_2958 600px-fotor-2024022204551.png"
+          alt="Rania Mamou profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Salut, je suis</p>
+        <h1 class="title">Rania Mamou</h1>
+        <p class="section__text__p2">
+          Étudiante en 2 ème année licence en informatique.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV-Rania.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rania-mamou-84260b257/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/rania250'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Découvrez-en plus</p>
+      <h1 class="title">A propos de moi</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers1">
+            <div>
+              <h1>
+                <img
+                  src="./assets/experience.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                Éducations
+              </h1>
+            </div>
+
+            <div class="details-container1">
+              <div class="about-education">
+                <h2>Université de La Rochelle</h2>
+                <h4>Étudiante en deuxième année license en informatique</h4>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> La Rochelle, France
+                </p>
+                <p>
+                  <i class="fa-solid fa-calendar-check"></i> Sept 2023 jusqu'à
+                  maintenant
+                </p>
+              </div>
+              <div>
+                <img
+                  src="./assets/LaRochelleUniversitéHD-fotor-2024022204730.png"
+                  alt=""
+                  class="about-img"
+                />
+              </div>
+            </div>
+            <div class="details-container1">
+              <div class="about-education">
+                <h2>Université de Boumerdes</h2>
+                <h4>
+                  Obtention d'un diplome de licence professionelle
+                  (Développement Web et Infographie)
+                </h4>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> Boumerdes, Algérie
+                </p>
+                <p><i class="fa-solid fa-calendar-check"></i> juin 2023</p>
+              </div>
+              <img
+                src="./assets/Logo-umbb-crsic.png"
+                alt=""
+                class="about-img"
+              />
+            </div>
+            <div class="details-container1">
+              <div class="about-education">
+                <h2>Lycee Aïn-Zaouïa</h2>
+                <h4>Obtention d'un diplome de BAC en Mathématiques</h4>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> Aïn-Zaouïa,
+                  Tizi-Ouzou, Algerie
+                </p>
+                <p><i class="fa-solid fa-calendar-check"></i> Sept 2020</p>
+              </div>
+              <div>
+                <img
+                  src="./assets/lyceeAinZaouia-fotor-2024022204825.png"
+                  alt=""
+                  class="about-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__about-container">
+          <p>
+            Je suis une étudiante en deuxième année de licence en informatique à
+            l'Université de La Rochelle. Passionnée par les domaines du
+            numérique et de l'informatique, j'aime concevoir et développer des
+            sites web et des applications mobiles modernes, réactives et
+            sécurisées. Mon objectif est d'intégrer un grand établissement afin
+            de poursuivre un parcours professionnel enrichissant dans mon
+            domaine. Cela me permettra de continuer à développer de nouvelles
+            compétences, d'apprendre de nouveaux langages et technologies, et
+            d'avoir l'opportunité de côtoyer des professionnels du métier tout
+            en réalisant des projets d'envergure. Je suis ouverte à de nouvelles
+            collaborations et opportunités qui me permettront de m'épanouir dans
+            mon domaine d'expertise
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorez Mes</p>
+      <h1 class="title">Expériences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Developpement Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML5</h3>
+                  <p>Expérimentée</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS3</h3>
+                  <p>Expérimentée</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JQuery/Ajax</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-end Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Parcourir Mes Récentes</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/foodie.PNG" alt="Foodie" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Foodie</h2>
+            <p>Html/css</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rania250/Foodie'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ranmamou-foodie.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Capturebankist.PNG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bankist</h2>
+            <p>Html/css/JavaScript</p>
+            <br />
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rania250/Bankist'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rania250.github.io/Bankist/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/guessmynumber.PNG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Guess My Number</h2>
+            <p>Html/css/JavaScript</p>
+            <br />
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rania250/Guess-My-Number'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rania250.github.io/Guess-My-Number/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ROLL DICE.PNG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ROLL DICE</h2>
+            <p>Html/css/JavaScript</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rania250/Roll-Dice'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rania250.github.io/Roll-Dice/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mapty.PNG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mapty</h2>
+            <p>Html/css/JavaScript</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rania250/Mapty'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rania250.github.io/Mapty/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Prendre Contact</p>
+      <h1 class="title">Contactez Moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:mamou.rania@proton.me">mamou.rania@proton.me</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/rania-mamou-84260b257/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rania Mamou. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
